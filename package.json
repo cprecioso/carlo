@@ -1,0 +1,43 @@
+{
+  "name": "@cprecioso/carlo",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "yarn",
+      "version": "4.16.0+sha512.5374c94eb4ef6aa8188fb112f20c1aa6569f248d676c5e576e1fd2a1a4d8d87a96df65d9dfe1c2a0252cbe38bda46cf18d955005b81b43cc7607a5c9d56fd2b6"
+    }
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "prepack": "yarn run build",
+    "watch": "tsdown --watch"
+  },
+  "dependencies": {
+    "@sindresorhus/slugify": "^3.0.0",
+    "env-paths": "^4.0.0",
+    "puppeteer": "^25.1.0"
+  },
+  "devDependencies": {
+    "@cprecioso/tsconfig": "^4.0.0",
+    "@types/node": "^24.12.4",
+    "prettier": "3.8.3",
+    "prettier-plugin-organize-imports": "4.3.0",
+    "prettier-plugin-pkg": "0.22.1",
+    "prettier-plugin-sh": "0.18.1",
+    "tsdown": "^0.22.0",
+    "typescript": "~6.0.3"
+  }
+}
