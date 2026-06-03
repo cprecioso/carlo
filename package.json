@@ -1,6 +1,18 @@
 {
   "name": "@cprecioso/carlo",
+  "version": "0.1.0",
   "type": "module",
+  "description": "Continuation of the Google Chrome Labs' Carlo project",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cprecioso/carlo.git"
+  },
+  "homepage": "https://github.com/cprecioso/carlo#readme",
+  "bugs": {
+    "url": "https://github.com/cprecioso/carlo/issues"
+  },
+  "author": "Carlos Precioso <npm@precioso.design>",
+  "license": "ISC",
   "engines": {
     "node": ">=24"
   },
